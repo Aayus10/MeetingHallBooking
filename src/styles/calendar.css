@@ -1,0 +1,21 @@
+/* Ensure all calendar tiles have borders */
+.custom-calendar .react-calendar__tile {
+    @apply h-24 w-24 flex flex-col text-center p-2 ;
+    border: 1px solid #ccc !important; /* Forces the border */
+
+  }
+  
+  .custom-calendar .react-calendar__tile div.booked-slots {
+    @apply text-xs text-center break-words;
+  }
+  
+  /* Optional: Add hover effect */
+  .custom-calendar .react-calendar__tile:hover {
+    @apply bg-gray-100 shadow-sm;
+  }
+  
+  /* Optional: Additional styling for active/selected dates */
+  .custom-calendar .react-calendar__tile--active {
+    @apply bg-blue-500 text-white;
+  }
+  
